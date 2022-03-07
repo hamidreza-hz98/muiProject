@@ -1,19 +1,22 @@
-import {  Add as AddIcon } from '@mui/icons-material'
-import { Fab , Tooltip} from '@mui/material'
-import React from 'react'
+import { Add as AddIcon } from "@mui/icons-material";
+import { Fab, Tooltip } from "@mui/material";
+import React from "react";
 
-import {useStyles} from './Add.styles'
+import { useStyles } from "./Add.styles";
 
-const Add=()=>{
-const classes=useStyles()
-return(
-    <div >
-        <Tooltip title='add' aria-label='add'  >
-            <Fab color='primary' size='small' >
-                <AddIcon  />
-            </Fab>
-        </Tooltip>
+const Add = () => {
+  const classes = useStyles();
+  return (
+    <div>
+      <Tooltip title="افزودن پست" aria-label="add" size='large'>
+        <Fab
+          color="primary"
+          className={classes.fab}
+        >
+          <AddIcon />
+        </Fab>
+      </Tooltip>
     </div>
-)
-}
-export default Add
+  );
+};
+export default Add;
